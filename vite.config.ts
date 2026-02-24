@@ -33,7 +33,7 @@ export default defineConfig({
                 'match': [
                     'https://chat.openai.com/',
                     // support https://chat.openai.com/?model={model}
-                    'https://chat.openai.com/?model=*',
+                    'https://chat.openai.com/?*',
                     // support https://chat.openai.com/c/123456789
                     'https://chat.openai.com/c/*',
                     // support https://chat.openai.com/g/g-123456789
@@ -47,7 +47,7 @@ export default defineConfig({
                     'https://chat.openai.com/share/*/continue',
 
                     'https://chatgpt.com/',
-                    'https://chatgpt.com/?model=*',
+                    'https://chatgpt.com/?*',
                     'https://chatgpt.com/c/*',
                     'https://chatgpt.com/g/*',
                     'https://chatgpt.com/gpts',
