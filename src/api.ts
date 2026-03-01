@@ -555,7 +555,7 @@ export async function fetchAllConversations(project: string | null = null, maxCo
     let cursor: string | number = 0 // project conversations use alphanumeric cursors
     while (true) {
         try {
-            const result = project === null
+            const result: ApiConversations = project === null
                 ? await fetchConversations(offset, limit)
                 : await fetchProjectConversations(project, cursor, limit)
             if (!result.items) {
